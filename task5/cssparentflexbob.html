@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css parentFlex box examples </title>
-    <style>
+    <style> 
+    h1{
+        text-align: center;
+    }
+    
         .horizontal-container {
             display: flex;
             flex-direction: row; /* Horizontal layout */
@@ -12,13 +16,16 @@
             padding: 10px;
             gap: 10px;
         }
-
+      .horizontal-container .item{
+        text-align: center;
+      }
         .vertical-container {
             display: flex;
             flex-direction: column; /* Vertical layout */
             border: 2px solid #000;
-            padding: 10px;
+            padding: 20px;
             gap: 10px;
+            text-align: center;
         }
 
         .item {
@@ -100,11 +107,13 @@
             gap: 10px;
         }
         .aligncontentitem {
-            background-color: rgb(6, 28, 56);
+            background-color: rgb(129, 142, 159);
             padding: 20px;
             border: 2px solid #000;
             flex: 1 1 120px; /* Grow, shrink, and base size */
             text-align: center;
+            color: aliceblue;
+            
         }
     </style>
 </head>
@@ -171,5 +180,6 @@
         <div class="aligncontentitem">Item 5</div>
         <div class="aligncontentitem">Item 6</div>
     </div>
+    
 </body>
 </html>
